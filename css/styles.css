@@ -241,6 +241,34 @@ hero-video {
   padding: 0 1rem 1rem 1rem;
 }
 
+/* Begin Grid Gallery Styles */
+.gallery-page {
+  padding: 0 1rem 10rem 1rem;
+}
+
+.portfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 0.5rem;
+  grid-auto-rows: 300px;
+}
+
+.gallery-item {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery-img {
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+}
+
+.gallery-img:hover {
+  transform: scale:(1.5);
+}
+
 /* Footer Nav Extra Styles */
 .footer-logo {
   white-space: nowrap;
